@@ -322,6 +322,77 @@ usepackage=[utf8]{inputenc}
 \end{document}
 [latexcode]>
 
+==== Code Listings ====
+
+* Package @listings@ und dem @[code]@ Environment (Bordmittel)
+* Package @minted@
+
+--1cm--
+
+* Ich bevorzuge minted
+** via @pygments@
+** etwas bessere Lexer
+** Einfach das schönere Output
+** Es gab noch »echte« Gründe, aber ich habe sie vergessen
+
+==== Beispiel: @listings@  ====[containsverbatim]
+
+<[latexcode]
+\begin{lstlisting}[language=Python, style=basic]
+print "Hello World!"
+\end{lstlisting}
+[latexcode]>
+
+--1.5cm--
+
+<[latexcode]
+\lstinputlisting[language=Python, style=basic]{code/code.py}
+[latexcode]>
+
+==== Beispiel: @listings@ Output  ====[containsverbatim]
+
+\begin{lstlisting}[language=Python, style=basic]
+print "Hello World!"
+\end{lstlisting}
+
+\hrulefill
+
+\lstinputlisting[language=Python, style=basic]{code/code.py}
+
+
+==== Beispiel: @minted@  ====[containsverbatim]
+
+<[latexcode]
+\newmintedfile{py}{fontsize=\footnotesize, xleftmargin=12pt}
+\newminted{py}{fontsize=\footnotesize, xleftmargin=12pt}
+[latexcode]>
+
+--1cm--
+
+<[moincode]
+<[nowiki]
+<[pycode]
+print "Hello World!"
+[pycode]>
+[nowiki]>
+[moincode]>
+
+--1cm--
+
+<[latexcode]
+\pyfile{code/code.py}
+[latexcode]>
+
+==== Beispiel: @minted@ Output  ====[containsverbatim]
+
+<[pycode]
+print "Hello World!"
+[pycode]>
+
+\hrulefill
+
+\pyfile{code/code.py}
+
 ==== Outline ====
 
 \tableofcontents[currentsection]
