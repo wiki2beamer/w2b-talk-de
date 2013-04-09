@@ -232,11 +232,17 @@ Inhalte
 Inhalte
 [block]>
 
-==== Weitere Umgebungen ====
+==== Weitere Umgebungen ====[containsverbatim]
 
 * @[center]@
 * @[verbatim]@
 ** braucht jedoch  @[containsverbatim]@ nach dem Titel
+
+<[verbatim]
+<[nowiki]
+==== Folie mit <[verbatim] ====[containsverbatim]
+[nowiki]>
+[verbatim]>
 
 ==== !WICHTIG!: @<[nowiki]@ ====[containsverbatim]
 
@@ -250,7 +256,7 @@ inhalte
 [nowiki]>
 [verbatim]>
 
-* Beispiel leider nicht möglich :D Bitte in die Quellen schauen
+* Beispiel leider nicht möglich -- Bitte in die Quellen schauen
 
 
 ==== Outline ====
