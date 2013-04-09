@@ -48,6 +48,20 @@
 \newminted{latex}{fontsize=\footnotesize, xleftmargin=12pt}
 \newminted{moin}{fontsize=\footnotesize, xleftmargin=12pt}
 
+\usepackage{listings}
+\lstdefinestyle{basic}{
+    captionpos=t,%
+    basicstyle=\color{black}\footnotesize\tt,%
+    showspaces=false,%
+    showstringspaces=false,%
+    showtabs=false,%
+    %
+    keywordstyle=\color{green},%
+    identifierstyle=\color{orange},%
+    commentstyle=\color{base0}\it,%
+    stringstyle=\color{cyan}%
+}
+
 \input{creative_commons/cc_beamer}
 
 \author{Valentin Haenel}
