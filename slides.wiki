@@ -124,7 +124,7 @@ Options:
 ==== Bilder ====
 
 <[center]
-    <<<images/python-logo-generic.pdf, scale=0.40>>>
+    <<<images/python-logo.pdf, scale=0.40>>>
 [center]>
 
 === Listen ===
