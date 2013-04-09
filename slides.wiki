@@ -237,6 +237,7 @@ Inhalte
 * @[center]@
 * @[verbatim]@
 ** braucht jedoch  @[containsverbatim]@ nach dem Titel
+* @[autotemplate]@
 
 <[verbatim]
 <[nowiki]
@@ -258,6 +259,68 @@ inhalte
 
 * Beispiel leider nicht möglich -- Bitte in die Quellen schauen
 
+==== Fertige \LaTeX Quellen erzeugen ====[containsverbatim]
+
+Enweder mit @\\input@ arbeiten...
+
+--1cm--
+
+<[latexcode]
+\documentclass{beamer}
+\begin{document}
+    \input{slides.wiki.tex}
+\end{document}
+[latexcode]>
+
+--1cm--
+
+oder das sog. ''autotemplate'' Feature verwenden.
+
+==== Autotemplate ====[containsverbatim]
+
+* Spezielle wiki2beamer Umgebung
+* Erzeugt die benötigten \LaTeX header
+* Einfache @key={value}@ Zeilen
+
+<[moincode]
+<[nowiki]
+<[autotemplate]
+title={wiki2beamer}
+author={Valentin Haenel}
+titleframe=False
+usepackage=[utf8]{inputenc}
+[autotemplate]>
+
+==== Intro ====
+
+* wiki2beamer...
+
+[nowiki]>
+[moincode]>
+
+==== Autotemplate -- \LaTeX ====[containsverbatim]
+
+<[latexcode]
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\date{\today}
+\lstdefinestyle{basic}{...}
+\title{wiki2beamer}
+\author{Valentin Haenel}
+
+\begin{document}
+\begin{frame}
+ \frametitle{Intro}
+\begin{itemize}
+  \item wiki2beamer...
+\end{itemize}
+\end{frame}
+
+\end{document}
+[latexcode]>
 
 ==== Outline ====
 
