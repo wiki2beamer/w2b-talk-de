@@ -43,6 +43,14 @@
 * Übersetzt einen wiki-artigen Dialekt nach \LaTeX Beamer Quellcode
 * Eine Art von Präprozessor
 
+==  Features ==
+
+==== Outline ====
+
+\tableofcontents
+
+=== Aufrufen ===
+
 ==== Aufrufen ====[containsverbatim]
 
 <[consolecode]
@@ -63,7 +71,7 @@ Options:
 * Sollte unter Python 2.3 - 3.x laufen
 * Wenn nicht, bitte Bug-Report einwerfen
 
-==  Features ==
+=== Gliederung ===
 
 ==== Gliederung -- @wiki@ ====[containsverbatim]
 
@@ -89,6 +97,7 @@ Options:
 ==== frame ====
 [latexcode]>
 
+=== Bilder ===
 
 ==== Bilder -- @wiki@ und \LaTeX ====[containsverbatim]
 
@@ -117,6 +126,8 @@ Options:
 <[center]
     <<<images/python-logo-generic.pdf, scale=0.40>>>
 [center]>
+
+=== Listen ===
 
 ==== Listen -- @wiki@ ====[containsverbatim]
 
@@ -154,7 +165,7 @@ Options:
 # zwei
 # drei
 
-==== Listen Gemischt @wiki@ ====[containsverbatim]
+==== Listen Gemischt -- @wiki@ ====[containsverbatim]
 
 <[moincode]
 <[nowiki]
@@ -176,7 +187,9 @@ Options:
 # zwei
 * drei
 
-==== Text markup ====
+=== Markup ===
+
+==== Text Markup ====
 
 \begin{tabular}{|l|l|l|}
 \hline
@@ -207,8 +220,9 @@ markup & output & escaping \\\hline
 	& _blue_blue text_ & \\\hline
 \end{tabular}
 
-==== Umgebungen (Environments) -- @wiki@ und \LaTeX ====[containsverbatim]
+=== Environments ===
 
+==== Umgebungen (Environments) -- @wiki@ und \LaTeX ====[containsverbatim]
 
 <[moincode]
 <[nowiki]
@@ -321,6 +335,8 @@ usepackage=[utf8]{inputenc}
 
 \end{document}
 [latexcode]>
+
+=== Code ===
 
 ==== Code Listings ====
 
