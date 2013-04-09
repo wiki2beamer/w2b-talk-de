@@ -105,7 +105,7 @@ Options:
 <[nowiki]
 
 <[center]
-    <<<images/python-logo-generic.pdf, scale=0.40>>>
+    <<<images/python-logo.pdf, scale=0.40>>>
 [center]>
 
 [nowiki]>
@@ -116,7 +116,7 @@ Options:
 <[latexcode]
 <[nowiki]
 \begin{center}
-    \includegraphics[ scale=0.40]{images/python-logo-generic.pdf}
+    \includegraphics[ scale=0.40]{images/python-logo.pdf}
 \end{center}
 [nowiki]>
 [latexcode]>
