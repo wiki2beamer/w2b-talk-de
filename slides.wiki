@@ -13,8 +13,8 @@
 ==== Beispiel Input ====[containsverbatim]
 
 <[nowiki]
+{\footnotesize
 \begin{verbatim}
-
 ==== @wiki2beamer@? ====
 
 * Tool zum leichteren erstellen von \LaTeX Beamer Präsentationen
@@ -22,10 +22,12 @@
 * Eine Art von Präprozessor
 
 \end{verbatim}
+}
 [nowiki]>
 
 ==== Beispiel Output ====[containsverbatim]
 
+{\footnotesize
 \begin{verbatim}
 ==== @wiki2beamer@? ====
 
@@ -33,6 +35,7 @@
 * Übersetzt einen wiki-artigen Dialekt nach \LaTeX Beamer Quellcode
 * Eine Art von Präprozessor
 \end{verbatim}
+}
 
 ==== @wiki2beamer@? ====
 
