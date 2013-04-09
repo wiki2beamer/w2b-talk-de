@@ -275,7 +275,7 @@ inhalte
 
 ==== Fertige \LaTeX Quellen erzeugen ====[containsverbatim]
 
-Enweder mit @input@ arbeiten...
+Entweder mit @input@ arbeiten...
 
 --1cm--
 
@@ -411,7 +411,7 @@ print "Hello World!"
 
 \pyfile{code/code.py}
 
-== Abschluß ==
+== Abschluss ==
 
 ==== Outline ====
 
