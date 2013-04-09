@@ -411,119 +411,26 @@ print "Hello World!"
 
 \pyfile{code/code.py}
 
+== Abschluß ==
+
 ==== Outline ====
 
 \tableofcontents[currentsection]
 
-=== Subsection 1 ===
+==== Kritik und Alternativen ====
 
-==== Outline ====
+* Parsing per Regex...
+* Keine standard Syntax (restructuredText, asciidoc, markdown...)
+* Kein Zeilenumbruch implementiert (könnte man aber nachholen)
 
-\tableofcontents[currentsection,currentsubsection]
+* \href{https://pypi.python.org/pypi/rst2beamer}{rst2beamer}
+** Werde ich sehr bald für ein echtes Projekt ausprobieren
 
+==== Links ====
 
-==== slide 2 ====
-
-* bullet 1
-* bullet 2
-* bullet 3
-
-=== Subsection 2 ===
-
-<[verbatim]
-
-wiki2beamer slides.wiki > slides.wiki.tex
-pdflatex slides.tex
-
-[verbatim]>
-
-==== Outline ====
-
-\tableofcontents[currentsection,currentsubsection]
-
-==== Block ====
-
-<[block]{Block Title}
-Block contents
-[block]>
-
-==== Special Symbols ====
-
-* Tilde: \~{}
-* Tilde: \textasciitilde{}
-* Caret: \^{}
-* Hash: \#
-* Braces: \{\}
-* Dollar: \$
-* Double en: -{}-
-* At in Typewriter: {\tt stash@\{0\} }
-* Exclamation mark in alert: \alert{Attention!}
-
-or use: nowiki
-
-==== Correct Escapes  ====
-
-This only works with my patched version of wiki2beamer.
-
-* @HEAD \@ HEAD@
-* Attention\! Attention\!
-
-==== Verbatim ====[fragile]
-
-\begin{verbatim}
-
-wiki2beamer slides.wiki > slides.wiki.tex
-pdflatex slides.tex
-
-\end{verbatim}
-
-[frame]>
-
-==== Verbatim2 ====[containsverbatim]
-
-<[verbatim]
-
-wiki2beamer slides.wiki > slides.wiki.tex
-pdflatex slides.tex
-
-[verbatim]>
-
-==== Verbatim Block ====[containsverbatim]
-
-<[block]{Verbatim Block}
-<[verbatim]
-
-wiki2beamer slides.wiki > slides.wiki.tex
-pdflatex slides.tex
-
-[verbatim]>
-[block]>
-
-==== Code ====[containsverbatim]
-
-\begin{pycode}
-def python_func(arg):
-    print 'arg was: ', arg
-
-python_func('Hello World!")
-\end{pycode}
-
-==== Code from file ====
-
-\pyfile{code/code.py}
-
-==== Example ====
-
-<[example]
-    This is an example
-[example]>
-
-==== Conclusion ====
-
-* Open source tools used to make this presentation:
-** \href{http://wiki2beamer.sourceforge.net/}{Wiki2beamer}
-** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
-** \href{http://projects.gnome.org/dia/}{Dia}
-** \href{http://pygments.org/}{Pygments}
-** \href{http://code.google.com/p/minted/}{Minted}
-** \href{https://bitbucket.org/john2x/solarized-pygment}{Solarized theme for pygments}
+* \href{http://wiki2beamer.sourceforge.net/}{Wiki2beamer}
+* \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
+* \href{http://pygments.org/}{Pygments}
+* \href{http://code.google.com/p/minted/}{Minted}
+* \href{https://bitbucket.org/john2x/solarized-pygment}{Solarized theme for pygments}
+* \href{http://blog.hartwork.org/?p=52}{cc-Beamer}
