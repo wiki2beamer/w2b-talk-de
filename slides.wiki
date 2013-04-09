@@ -261,7 +261,7 @@ inhalte
 
 ==== Fertige \LaTeX Quellen erzeugen ====[containsverbatim]
 
-Enweder mit @\\input@ arbeiten...
+Enweder mit @input@ arbeiten...
 
 --1cm--
 
