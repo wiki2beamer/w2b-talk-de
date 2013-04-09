@@ -239,11 +239,11 @@ Inhalte
 ** braucht jedoch  @[containsverbatim]@ nach dem Titel
 * @[autotemplate]@
 
-<[verbatim]
+<[moincode]
 <[nowiki]
 ==== Folie mit <[verbatim] ====[containsverbatim]
 [nowiki]>
-[verbatim]>
+[moincode]>
 
 ==== !WICHTIG!: @<[nowiki]@ ====[containsverbatim]
 
