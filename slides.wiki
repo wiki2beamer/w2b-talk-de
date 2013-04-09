@@ -353,11 +353,13 @@ usepackage=[utf8]{inputenc}
 
 ==== Beispiel: @listings@  ====[containsverbatim]
 
-<[latexcode]
-\begin{lstlisting}[language=Python, style=basic]
+<[moincode]
+<[nowiki]
+<[code][language=Python, style=basic]
 print "Hello World!"
-\end{lstlisting}
-[latexcode]>
+[code]>
+[nowiki]>
+[moincode]>
 
 --1.5cm--
 
@@ -367,9 +369,9 @@ print "Hello World!"
 
 ==== Beispiel: @listings@ Output  ====[containsverbatim]
 
-\begin{lstlisting}[language=Python, style=basic]
+<[code][language=Python, style=basic]
 print "Hello World!"
-\end{lstlisting}
+[code]>
 
 \hrulefill
 
