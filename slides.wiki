@@ -1,16 +1,245 @@
-== Section 1 ==
+== Einführung ==
 
 ==== Outline ====
 
 \tableofcontents[currentsection]
 
-==== slide 1 ====
+==== @wiki2beamer@? ====
 
-* bullet 1
-* bullet 2
-* bullet 3
+* Tool zum leichteren erstellen von \LaTeX Beamer Präsentationen
+* Übersetzt einen wiki-artigen Dialekt nach \LaTeX Beamer Quellcode
+* Eine Art von Präprozessor
 
-==  Section 2 ==
+==== Beispiel Input ====[containsverbatim]
+
+<[nowiki]
+\begin{verbatim}
+
+==== @wiki2beamer@? ====
+
+* Tool zum leichteren erstellen von \LaTeX Beamer Präsentationen
+* Übersetzt einen wiki-artigen Dialekt nach \LaTeX Beamer Quellcode
+* Eine Art von Präprozessor
+
+\end{verbatim}
+[nowiki]>
+
+==== Beispiel Output ====[containsverbatim]
+
+\begin{verbatim}
+==== @wiki2beamer@? ====
+
+* Tool zum leichteren erstellen von \LaTeX Beamer Präsentationen
+* Übersetzt einen wiki-artigen Dialekt nach \LaTeX Beamer Quellcode
+* Eine Art von Präprozessor
+\end{verbatim}
+
+==== @wiki2beamer@? ====
+
+* Tool zum leichteren erstellen von \LaTeX Beamer Präsentationen
+* Übersetzt einen wiki-artigen Dialekt nach \LaTeX Beamer Quellcode
+* Eine Art von Präprozessor
+
+==== Aufrufen ====[containsverbatim]
+
+<[consolecode]
+$ wiki2beamer slides.wiki > slides.wiki.tex
+[consolecode]>
+
+--2cm--
+
+* Sollte unter Python 2.3 - 3.x laufen
+* Wenn nicht, bitte Bug-Report einwerfen
+
+==  Features ==
+
+==== Gliederung -- @wiki@ ====[containsverbatim]
+
+<[moincode]
+<[nowiki]
+
+=== section ===
+
+=== subsection ===
+
+==== frame ====
+
+[nowiki]>
+[moincode]>
+
+==== Gliederung -- \LaTeX ====[containsverbatim]
+
+<[latexcode]
+=== section ===
+
+=== subsection ===
+
+==== frame ====
+[latexcode]>
+
+
+==== Bilder -- @wiki@ und \LaTeX ====[containsverbatim]
+
+<[moincode]
+<[nowiki]
+
+<[center]
+    <<<images/python-logo-generic.pdf, scale=0.40>>>
+[center]>
+
+[nowiki]>
+[moincode]>
+
+--1cm--
+
+<[latexcode]
+<[nowiki]
+\begin{center}
+    \includegraphics[ scale=0.40]{images/python-logo-generic.pdf}
+\end{center}
+[nowiki]>
+[latexcode]>
+
+==== Bilder ====
+
+<[center]
+    <<<images/python-logo-generic.pdf, scale=0.40>>>
+[center]>
+
+==== Listen -- @wiki@ ====[containsverbatim]
+
+<[moincode]
+<[nowiki]
+* eins
+* zwei
+* drei
+
+# eins
+# zwei
+# drei
+[nowiki]>
+[moincode]>
+
+==== Listen -- \LaTeX ====[containsverbatim]
+
+<[latexcode]
+* eins
+* zwei
+* drei
+
+# eins
+# zwei
+# drei
+[latexcode]>
+
+==== Listen ====[containsverbatim]
+
+* eins
+* zwei
+* drei
+
+# eins
+# zwei
+# drei
+
+==== Listen Gemischt @wiki@ ====[containsverbatim]
+
+<[moincode]
+<[nowiki]
+# eins
+## eins eins
+## eins zwei
+#* eins drei
+# zwei
+* drei
+[nowiki]>
+[moincode]>
+
+==== Listen Gemischt ====[containsverbatim]
+
+# eins
+## eins eins
+## eins zwei
+#* eins drei
+# zwei
+* drei
+
+==== Text markup ====
+
+\begin{tabular}{|l|l|l|}
+\hline
+markup & output & escaping \\\hline
+\hline
+<[nowiki]
+\texttt{'{}'{}'bold text'{}'{}'}
+[nowiki]>
+	& '''bold text''' & \\\hline
+<[nowiki]
+\texttt{'{}'italic text'{}'}
+[nowiki]>
+	& ''italic text'' & \\\hline
+
+<[nowiki]
+\texttt{@teletype text@}
+[nowiki]>
+	& @teletype text@ & \textbackslash@ \\\hline
+
+<[nowiki]
+\texttt{!alerted text!}
+[nowiki]>
+	& !alerted text! & \textbackslash! \\\hline
+
+<[nowiki]
+\texttt{\_color\_colored text\_}
+[nowiki]>
+	& _blue_blue text_ & \\\hline
+\end{tabular}
+
+==== Umgebungen (Environments) -- @wiki@ und \LaTeX ====[containsverbatim]
+
+
+<[moincode]
+<[nowiki]
+<[block]{\LaTeX Beamer Block}
+Inhalte
+[block]>
+[nowiki]>
+[moincode]>
+
+--1cm--
+
+<[latexcode]
+<[block]{\LaTeX Beamer Block}
+Inhalte
+[block]>
+[latexcode]>
+
+--1cm--
+
+<[block]{\LaTeX Beamer Block}
+Inhalte
+[block]>
+
+==== Weitere Umgebungen ====
+
+* @[center]@
+* @[verbatim]@
+** braucht jedoch  @[containsverbatim]@ nach dem Titel
+
+==== !WICHTIG!: @<[nowiki]@ ====[containsverbatim]
+
+* Möglichkeit um Verarbeitung von @wiki2beamer@ zu unterbinden, z.b.
+
+<[verbatim]
+<[nowiki]
+<[block]{\LaTeX Beamer Block}
+inhalte
+[block]>
+[nowiki]>
+[verbatim]>
+
+* Beispiel leider nicht möglich :D Bitte in die Quellen schauen
+
 
 ==== Outline ====
 
@@ -22,11 +251,6 @@
 
 \tableofcontents[currentsection,currentsubsection]
 
-==== Image Slide ====
-
-<[center]
-    <<<images/python-logo.png, scale=0.30>>>
-[center]>
 
 ==== slide 2 ====
 
@@ -35,6 +259,13 @@
 * bullet 3
 
 === Subsection 2 ===
+
+<[verbatim]
+
+wiki2beamer slides.wiki > slides.wiki.tex
+pdflatex slides.tex
+
+[verbatim]>
 
 ==== Outline ====
 
