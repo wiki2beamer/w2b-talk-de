@@ -47,9 +47,18 @@
 
 <[consolecode]
 $ wiki2beamer slides.wiki > slides.wiki.tex
+$ wiki2beamer -h
+Usage:
+  wiki2beamer [options] [input1.txt [input2.txt ...]] > output.tex
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -o FILE, --output=FILE
+                        write output to FILE instead of stdout
 [consolecode]>
 
---2cm--
+--1cm--
 
 * Sollte unter Python 2.3 - 3.x laufen
 * Wenn nicht, bitte Bug-Report einwerfen
