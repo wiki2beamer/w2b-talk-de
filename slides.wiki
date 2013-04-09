@@ -422,6 +422,7 @@ print "Hello World!"
 * Parsing per Regex...
 * Keine standard Syntax (restructuredText, asciidoc, markdown...)
 * Kein Zeilenumbruch implementiert (könnte man aber nachholen)
+* So lange gepatched bis es brauchbar wurde
 
 * \href{https://pypi.python.org/pypi/rst2beamer}{rst2beamer}
 ** Werde ich sehr bald für ein echtes Projekt ausprobieren
