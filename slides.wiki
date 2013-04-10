@@ -427,6 +427,14 @@ print "Hello World!"
 
 \tableofcontents[currentsection]
 
+==== Noch nicht erwähnt wurden ====
+
+* Einblenden/Ausblenden
+* Spalten
+* Header/Footer
+* Fußnoten
+* Layout Modifier
+
 ==== Kritik und Alternativen ====
 
 * Parsing per Regex...
