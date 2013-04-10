@@ -49,6 +49,18 @@
 
 \tableofcontents
 
+==== Features ====
+
+* Textbasiert: kann also versioniert werden
+* \LaTeX wird unverarbeitet weitergereicht
+* Gute Unterstützung für Quellcode-Beispiele
+
+* Sollte unter Python 2.3 - 3.x laufen
+** --> Wenn nicht, bitte Bug-Report einwerfen
+
+* Aktuelles Release:  @0.9.5@
+* Pakete für Debian/Gentoo/Fedora
+
 === Aufrufen ===
 
 ==== Aufrufen ====[containsverbatim]
@@ -65,12 +77,6 @@ Options:
   -o FILE, --output=FILE
                         write output to FILE instead of stdout
 [consolecode]>
-
---1cm--
-
-* Aktuelles Release:  @0.9.5@
-* Sollte unter Python 2.3 - 3.x laufen
-* Wenn nicht, bitte Bug-Report einwerfen
 
 === Gliederung ===
 
