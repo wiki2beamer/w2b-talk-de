@@ -2,7 +2,7 @@
 
 ==== Outline ====
 
-\tableofcontents[currentsection]
+\tableofcontents
 
 ==== @wiki2beamer@? ====
 
