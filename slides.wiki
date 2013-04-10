@@ -68,6 +68,7 @@ Options:
 
 --1cm--
 
+* Aktuelles Release:  @0.9.5@
 * Sollte unter Python 2.3 - 3.x laufen
 * Wenn nicht, bitte Bug-Report einwerfen
 
