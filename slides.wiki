@@ -272,17 +272,20 @@ Inhalte
 
 <[verbatim]
 <[nowiki]
+<[n0wiki]
 <[block]{\LaTeX Beamer Block}
 inhalte
 [block]>
+[n0wiki]>
 [nowiki]>
 [verbatim]>
 
-* Beispiel leider nicht möglich -- Bitte in die Quellen schauen
+* Sollte natürlich  @<[nowiki]@ und nicht @<[n0wiki]@ heißen
 
 ==== Fertige \LaTeX Quellen erzeugen ====[containsverbatim]
 
 Entweder mit @input@ arbeiten...
+
 
 --1cm--
 
